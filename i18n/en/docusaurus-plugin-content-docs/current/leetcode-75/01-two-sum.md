@@ -4,36 +4,36 @@ sidebar_position: 1
 
 # 1. Two Sum
 
-> @BirinderSingh: 如果面試官問了一個你不知道答案的問題，試著回答：「我認為這個問題用哈希表可以解決」。
+> @BirinderSingh: If the interviewer asks something and you don't know the answer, just answer "a hash map should do the trick".
 
-## 題目說明
+## Problem Description
 
-[LeetCode 題目連結](https://leetcode.com/problems/two-sum/)
+[LeetCode Problem Link](https://leetcode.com/problems/two-sum/)
 
-- 這道題目是要找出陣列中兩個數字相加等於目標值的索引
-- 每次輸入總是會有一組解答，也就是說不用考慮沒有解的情況
+- The problem is to find the indices of the two numbers in an array that add up to a specific target.
+- There is always one solution for each input, meaning you don't have to consider the case where there is no solution.
 
-## 解題思路
+## Solution Thoughts
 
-1. 暴力法：
-   - 雙層迴圈
-   - 效率分析
-     - 時間複雜度：O(n^2)
-     - 空間複雜度：O(1)
-       - 沒有使用額外的空間
-2. hash map：**本題的解法**
-   - 使用 hash map 來記錄已經用過的數字
-     - 為什麼？**hash map 的查詢時間複雜度為 O(1)**
-   - 遍歷時檢查 hash map 中是否有目標值減去當前數字的補數（complement）
-     - 當前數字 + 補數 = 目標值 => nums[i] + complement = target
-   - 效率分析
-     - 時間複雜度：O(n)
-       - 一層迴圈的時間複雜度為 O(n)
-       - 為什麼？hash map 的查詢時間複雜度為 O(1)
-     - 空間複雜度：O(n)
-       - 使用了額外的空間來儲存 hash map
+1. Brute Force:
+   - Nested loops
+   - Efficiency Analysis
+     - Time Complexity: O(n^2)
+     - Space Complexity: O(1)
+       - No extra space used
+2. Hash Map: **The solution for this problem**
+   - Use a hash map to keep track of the numbers we have seen
+     - Why? **The lookup time complexity of a hash map is O(1)**
+   - While iterating, check if the hash map contains the complement of the current number (complement)
+     - Current number + Complement = Target => nums[i] + complement = target
+   - Efficiency Analysis
+     - Time Complexity: O(n)
+       - The time complexity of a single loop is O(n)
+       - Why? The lookup time complexity of a hash map is O(1)
+     - Space Complexity: O(n)
+       - Extra space is used to store the hash map
 
-## 程式碼實作
+## Code Implementation
 
 ### Python
 
@@ -71,7 +71,7 @@ function twoSum(nums: number[], target: number): number[] {
 }
 ```
 
-#### 流程圖
+#### Flowchart
 
 ```mermaid
 graph TD
@@ -108,12 +108,12 @@ function twoSum(nums, target) {
 }
 ```
 
-## 討論
+## Discussion
 
-### 使用 JavaScript 的 Map 物件
+### Using JavaScript's Map Object
 
-- Map 物件是一種簡單的 key-value 配對的集合
-- Map 物件允許 key 是任何型別，在這裡我們使用 number 作為 key，而常規的物件只能使用 string 作為 key（也可以使用 symbol）
+- The Map object is a simple key-value map collection.
+- The Map object allows for keys of any type, here we use number as the key, whereas regular objects only allow strings as keys (symbols can also be used).
 
 ```ts
 function twoSum(nums: number[], target: number): number[] {
@@ -131,6 +131,6 @@ function twoSum(nums: number[], target: number): number[] {
 }
 ```
 
-## 參考網站
+## References
 
 - [NeetCode](https://www.youtube.com/watch?v=KLlXCFG5TnA&t=93s&ab_channel=NeetCode)
