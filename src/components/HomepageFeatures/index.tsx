@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import Translate, { translate } from '@docusaurus/Translate';
 
 type FeatureItem = {
   title: string;
@@ -10,33 +11,44 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: translate({
+      message: '容易使用',
+      id: 'features.easyToUse.title',
+    }),
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and used to get your website up and running
-        quickly.
-      </>
+      <Translate id="features.easyToUse.description">
+        Docusaurus 從一開始就被設計為容易安裝和使用，可以快速建立您的網站。
+      </Translate>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: translate({
+      message: '專注於重要事物',
+      id: 'features.focusOnWhatMatters.title',
+    }),
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go ahead and move your docs into the{' '}
-        <code>docs</code> directory.
-      </>
+      <Translate
+        id="features.focusOnWhatMatters.description"
+        values={{
+          code: <code>docs</code>,
+        }}
+      >
+        {'Docusaurus 讓您專注於您的文檔，我們會處理雜事。請將您的文檔移至 {code} 資料夾。'}
+      </Translate>
     ),
   },
   {
-    title: 'Powered by React',
+    title: translate({
+      message: '由 React 驅動',
+      id: 'features.poweredByReact.title',
+    }),
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can be extended while reusing the same
-        header and footer.
-      </>
+      <Translate id="features.poweredByReact.description">
+        通過重用 React 來擴展或自定義您的網站佈局。Docusaurus 可以在重用相同的頭部和尾部時進行擴展。
+      </Translate>
     ),
   },
 ];

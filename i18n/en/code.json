@@ -1,0 +1,26 @@
+{
+  "features.easyToUse.title": {
+    "message": "Easy to Use",
+    "description": "The title for the 'Easy to Use' feature on the homepage."
+  },
+  "features.easyToUse.description": {
+    "message": "Docusaurus was designed from the ground up to be easily installed and used to get your website up and running quickly.",
+    "description": "The description for the 'Easy to Use' feature on the homepage."
+  },
+  "features.focusOnWhatMatters.title": {
+    "message": "Focus on What Matters",
+    "description": "The title for the 'Focus on What Matters' feature on the homepage."
+  },
+  "features.focusOnWhatMatters.description": {
+    "message": "Docusaurus lets you focus on your docs, and we'll do the chores. Go ahead and move your docs into the {docs} directory.",
+    "description": "The description for the 'Focus on What Matters' feature on the homepage."
+  },
+  "features.poweredByReact.title": {
+    "message": "Powered by React",
+    "description": "The title for the 'Powered by React' feature on the homepage."
+  },
+  "features.poweredByReact.description": {
+    "message": "Extend or customize your website layout by reusing React. Docusaurus can be extended while reusing the same header and footer.",
+    "description": "The description for the 'Powered by React' feature on the homepage."
+  }
+}
