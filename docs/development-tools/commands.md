@@ -1,5 +1,7 @@
 ---
 title: '指令'
+tags:
+  - draft
 ---
 
 - `pnpm up --latest` - Update all packages to the latest version

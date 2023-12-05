@@ -1,6 +1,8 @@
 ---
 sidebar_position: 1
 title: '使用 Prettier 美化你的程式碼'
+tags:
+  - draft
 ---
 
 在現代軟體開發中，程式碼的可讀性和一致性非常重要。Prettier 是一個受歡迎的程式碼格式化工具，可以幫助你自動地美化程式碼，保持一致的風格。本文將介紹 Prettier 的基本用法和一些進階設定。
