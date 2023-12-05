@@ -36,7 +36,7 @@ title: '如何命名事件處理器？'
 
 在父組件中，我們定義一個 `handleClick` 函式，並將其作為 `onClick` prop 傳遞給子組件。
 
-```jsx title="src/components/ParentComponent.tsx"
+```tsx title="src/components/ParentComponent.tsx"
 const ParentComponent = () => {
   const handleClick = () => {
     // 處理點擊事件
@@ -48,7 +48,7 @@ const ParentComponent = () => {
 
 在子組件中，我們接收 `onClick` prop，並定義了自己的 `handleClick` 函式，在按鈕被點擊時執行特定操作，然後調用 `onClick`。
 
-```jsx title="src/components/ChildComponent.tsx"
+```tsx title="src/components/ChildComponent.tsx"
 type ChildComponentProps = {
   onClick: () => void;
 };
