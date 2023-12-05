@@ -21,7 +21,4 @@ yarn-error.log*
 
 temp
 
-docs/javascript
-docs/nextjs
-docs/react
-docs/typescript
+draft/

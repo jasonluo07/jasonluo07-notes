@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Singleton（單例模式）
@@ -178,7 +178,7 @@ console.log(singleton.someProperty); // Output: 'New Value'
   }
   ```
 
-## 參考
+## 參考來源
 
 - [Refactoring.Guru](https://refactoring.guru/design-patterns/singleton)
 - [patterns.dev](https://www.patterns.dev/posts/singleton-pattern)

@@ -3,7 +3,7 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'My Site',
+  title: 'Jason Luo',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
@@ -65,7 +65,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Jason Luo',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -75,9 +75,9 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: '筆記',
         },
-        { to: '/blog', label: 'Blog', position: 'left' },
+        { to: '/blog', label: '部落格', position: 'left' },
         {
           type: 'localeDropdown',
           position: 'right',
@@ -96,7 +96,7 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: '筆記',
               to: '/docs/intro',
             },
           ],
@@ -122,7 +122,7 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
+              label: '部落格',
               to: '/blog',
             },
             {

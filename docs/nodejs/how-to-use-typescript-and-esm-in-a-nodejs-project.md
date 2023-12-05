@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # 如何在 Node.js 專案中使用 TypeScript 以及 ESM
 
+![如何在 Node.js 專案中使用 TypeScript 以及 ESM](https://i.imgur.com/KLuu27M.png)
+
 Node.js 是一個伺服器端的執行環境，而 TypeScript 則是一個靜態類型的 JavaScript 超集，允許在開發過程中更容易地捕捉錯誤並提升程式碼的可讀性。此外，ECMAScript Modules（ESM）是一個模組系統，用於更好地組織和管理 JavaScript 程式碼。本文將說明如何在 Node.js 專案中結合使用 TypeScript 和 ESM，以實現更清晰和可維護的程式碼結構。
 
 ## 先決條件
@@ -33,7 +35,7 @@ npm init -y
 ```json
 {
   // ...
-  "type": "module",
+  "type": "module"
   // ...
 }
 ```
