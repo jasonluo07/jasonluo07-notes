@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debounce</title>
+  </head>
+  <body>
+    <input type="text" />
+    <h2>Default <span id="default"></span></h2>
+    <h2>Debounce <span id="debounce"></span></h2>
+    <p class="result"></p>
+
+    <script>
+      const input = document.querySelector('input');
+      const result = document.querySelector('.result');
+
+      const defaultText = document.querySelector('#default');
+      const debounceText = document.querySelector('#debounce');
+
+      input.addEventListener('keyup', (e) => {
+        defaultText.textContent = e.target.value;
+      });
+    </script>
+  </body>
+</html>

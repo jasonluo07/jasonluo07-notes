@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: '如何命名事件處理器？'
+title: 如何命名事件處理器？
 ---
 
 在 React 中，`handle` 和 `on` 是兩種常見的前綴詞（prefix），用於命名與事件處理相關的函式。它們各自在不同的情境下有一定的使用習慣。
@@ -71,5 +71,6 @@ const ChildComponent = ({ onClick }: ChildComponentProps) => {
 
 ## 參考資料
 
-- [Stack Overflow: What is the right name of event handler? onClick or handleClick?](https://stackoverflow.com/questions/60048249/what-is-the-right-name-of-event-handler-onclick-or-handleclick)
-- [Google Search: How to name event handlers](https://www.google.com/search?q=how+to+name+event+handler)
+- [React | Responding to Events](https://react.dev/learn/responding-to-events#:~:text=Have%20names%20that%20start%20with%20handle%2C%20followed%20by%20the%20name%20of%20the%20event.)
+- [Stack Overflow | What is the right name of event handler? onClick or handleClick?](https://stackoverflow.com/questions/60048249/what-is-the-right-name-of-event-handler-onclick-or-handleclick)
+- [Google Search | How to name event handlers](https://www.google.com/search?q=how+to+name+event+handler)

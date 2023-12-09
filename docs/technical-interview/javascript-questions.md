@@ -10,7 +10,7 @@ sidebar_position: 2
 
 > Describe the difference between `<script>`, `<script async>` and `<script defer>`
 
-- [ ] 解釋原型繼承是如何工作的。
+- [ ] 解釋原型繼承是如何運作的。
 
 > Explain how prototypal inheritance works
 
@@ -22,7 +22,7 @@ sidebar_position: 2
 
 > What's the difference between a variable that is: `null`, `undefined` or undeclared?
 
-- [ ] `.call` 和 `.apply` 之間有什麼不同？
+- [x] `.call` 和 `.apply` 之間有什麼不同？
 
 > What's the difference between `.call` and `.apply`?
 
@@ -42,7 +42,7 @@ sidebar_position: 2
 
 > Explain "hoisting"
 
-- [ ] 解釋同步函式和非同步函式之間的差異
+- [x] 解釋同步函式和非同步函式之間的差異
 
 > Explain the difference between synchronous and asynchronous functions
 
