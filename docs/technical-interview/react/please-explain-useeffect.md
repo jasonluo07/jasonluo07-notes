@@ -8,14 +8,14 @@ title: 請你說明 `useEffect`
 
 ### 介紹
 
-`useEffect` 是用來將 React 組件和外部系統同步的 hook。這裡的外部系統是指不受 React 控制的程式碼，比如說：從後端 API 取得資料，或是，使用瀏覽器 API（像是 setTimeout、setInterval、事件訂閱，這些之類的）。
+`useEffect` 是用來將組件和外部系統同步的 hook。這裡的外部系統指的是不受 React 控制的程式碼，比如說：從後端 API 取得資料，或是，使用瀏覽器 API，像是 `setTimeout`、`setInterval`、或是事件訂閱，這些之類的。
 
 ### 用法
 
-`useEffect` 接受兩個參數。
+使用 `useEffect` 的時候，有兩個參數要傳入。
 
-- 第一個參數是一個函式，特別稱為 setup function，這是用來執行 side effect 的邏輯。這個 setup function 也可以選擇性地回傳 cleanup function。cleanup function 是用來清理 side effect。
-- 第二個參數是一個陣列，特別稱為 dependencies（依賴項陣列），是一個可選的參數。dependencies 是用來決定什麼時候要執行 setup function。當這個陣列中的一個 dependency 的值被改變時，會再次執行 setup function，如果有 cleanup function 的話，那麼，會先執行 cleanup function，再來執行 setup function。
+- 第一個參數是一個函式，我們叫它 setup function，用來執行 side effect。那麼，它還可以選擇性地回傳另一個函式，我們叫它 cleanup function，用來在不需要 side effect 的時候進行清理。
+- 第二個參數是一個陣列，我們叫它 dependencies（依賴項陣列），是一個可選的參數。dependencies 是用來控制 setup function 的執行時機。當這個陣列中的某一項的值被改變，就會再次執行 setup function，如果有 cleanup function 的話，那麼，會先執行 cleanup function，再來執行 setup function。
   - 如果這個參數被省略時，`useEffect` 會在每次渲染之後都執行 setup function。
   - 如果這個參數是一個空陣列，`useEffect` 會在組件被加入 DOM 之後執行 setup function，並且在組件被移除 DOM 之後執行 cleanup function。
 
