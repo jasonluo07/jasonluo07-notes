@@ -8,7 +8,7 @@ title: 請你說明 `useEffect`
 
 ### 介紹
 
-`useEffect` 是用來將組件和外部系統同步的 hook。這裡的外部系統指的是不受 React 控制的程式碼，比如說：從後端 API 取得資料，或是，使用瀏覽器 API，像是 `setTimeout`、`setInterval`、或是事件訂閱，這些之類的。
+`useEffect` 是用來將組件和外部系統同步的 hook。這裡的外部系統指的是不受 React 控制的程式碼，比方說：從後端 API 取得資料，或是，使用瀏覽器 API，像是 `setTimeout`、`setInterval`、或是事件訂閱，這些之類的。
 
 ### 用法
 
